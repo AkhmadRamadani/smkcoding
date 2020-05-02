@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nama"
+        android:padding="10dp">
+    </EditText>
+    <Spinner
+        android:id="@+id/jk"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        >
+
+    </Spinner>
+    <EditText
+        android:id="@+id/umur"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Umur (tahun)"
+        android:padding="10dp">
+    </EditText>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:padding="10dp">
+    </EditText>
+    <EditText
+        android:id="@+id/telp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="No. Telepon"
+        android:padding="10dp">
+    </EditText>
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Alamat"
+        android:padding="10dp">
+    </EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Simpan"
+        ></Button>
+</LinearLayout>
