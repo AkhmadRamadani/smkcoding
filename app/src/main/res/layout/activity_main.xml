@@ -3,56 +3,89 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/nama"
+    <LinearLayout
+        android:background="#398C77"
+        android:paddingHorizontal="20dp"
+        android:gravity="center_vertical"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Nama"
-        android:padding="10dp">
-    </EditText>
-    <Spinner
-        android:id="@+id/jk"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="Biodata App"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         >
 
-    </Spinner>
-    <EditText
-        android:id="@+id/umur"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Umur (tahun)"
-        android:padding="10dp">
-    </EditText>
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Email"
-        android:padding="10dp">
-    </EditText>
-    <EditText
-        android:id="@+id/telp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="No. Telepon"
-        android:padding="10dp">
-    </EditText>
-    <EditText
-        android:id="@+id/alamat"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:hint="Alamat"
-        android:padding="10dp">
-    </EditText>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Simpan"
-        ></Button>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Nama"
+                android:padding="10dp">
+            </EditText>
+            <Spinner
+                android:id="@+id/jk"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:entries="@array/jenis_kelamin">
+
+            </Spinner>
+            <EditText
+                android:id="@+id/umur"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Umur (tahun)"
+                android:inputType="number"
+                android:padding="10dp">
+            </EditText>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:padding="10dp">
+            </EditText>
+            <EditText
+                android:id="@+id/telp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="No. Telepon"
+                android:padding="10dp"
+                android:inputType="phone">
+            </EditText>
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="Alamat"
+                android:padding="10dp">
+            </EditText>
+            <Button
+                android:id="@+id/simpanButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Simpan"
+                ></Button>
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>
