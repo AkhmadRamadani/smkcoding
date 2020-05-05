@@ -1,15 +1,23 @@
 package com.example.antrian
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_profil.*
 
 class profil : AppCompatActivity() {
-
+//    private var getNama = ""
+//    private var getJK = ""
+//    private var getUmur = ""
+//    private var getEmail = ""
+//    private var getTelp = ""
+//    private var getAlamat = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profil)
         getData()
+        aboutButton.setOnClickListener { toAbout() }
     }
 
     private fun getData(){
@@ -28,7 +36,15 @@ class profil : AppCompatActivity() {
         email.text = getemail
         telp.text = gettelp
         alamat.text = getalamat
+    }
 
+    private fun toAbout(){
+        val intent = Intent(this, About::class.java)
+//
+//        intent.putExtras(intent.extras)
+//
+        startActivity(intent)
+        Toast.makeText(this, "About dipitet", Toast.LENGTH_SHORT).show()
 
     }
 }
